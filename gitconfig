@@ -1,0 +1,12 @@
+[user]
+	email = sai2020@gmail.com
+	name = Sai Sunku
+
+[alias]
+	graph = log --all --graph --decorate --oneline
+	unstage = reset HEAD --
+[merge]
+	conflictstyle = diff3
+[core]
+	excludesfile = /home/sai/.gitignore_global
+	autocrlf = input
