@@ -35,7 +35,9 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 " YouCompleteMe stuff
 nnoremap <F5> :YcmForceCompileAndDiagnostics
 
-
+" Persistent undo
+set undofile
+set undodir=~/.vim/undodir
 
 
 

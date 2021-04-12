@@ -1,2 +1,5 @@
 # Vim temporary file
 .netrwhist
+
+# Vim undo history
+vim/undodir
