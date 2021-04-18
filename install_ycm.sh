@@ -6,4 +6,4 @@ cd $SCRIPT_DIR
 git submodule update --init --recursive
 
 sudo apt-get install python3-dev cmake g++
-python3 ~/.vim/bundle/YouCompleteMe/install.py --java-completer
+python3 ~/.vim/bundle/YouCompleteMe/install.py --all
