@@ -85,6 +85,10 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# Make the SpiderOak directories more readable
+# From https://askubuntu.com/questions/881949/ugly-color-for-directories-in-gnome-terminal
+export LS_COLORS="$LS_COLORS:ow=1;34;47"
+
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
