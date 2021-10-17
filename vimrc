@@ -8,7 +8,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'preservim/nerdtree'
-Plugin 'easymotion/vim-easymotion'
+Plugin 'dense-analysis/ale'
 
 call vundle#end()
 filetype plugin indent on
@@ -39,7 +39,10 @@ nnoremap <F5> :YcmForceCompileAndDiagnostics
 set undofile
 set undodir=~/.vim/undodir
 
-
+" Tab
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 " Missing semester default vimrc
 

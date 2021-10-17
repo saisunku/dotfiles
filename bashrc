@@ -138,6 +138,8 @@ fi
 
 # Key remappings
 # Remap Caps Lock to Ctrl
+xmodmap -e "keycode 37 = Caps_Lock"
+xmodmap -e "keycode 66 = Control_L"
 setxkbmap -option caps:ctrl_modifier
 
 # Use vim bindings
@@ -152,3 +154,19 @@ export EDITOR="$VISUAL"
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/sai/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/sai/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/sai/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/sai/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
